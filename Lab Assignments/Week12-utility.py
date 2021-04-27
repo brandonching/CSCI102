@@ -14,5 +14,13 @@ def load_file(file_name):
     return lines
 
 
+def update_string(string_1, string_2, num):
+    output = 'OUTPUT '
+    output += string_1[:num]
+    output += string_2
+    output += string_1[num+1:]
+    return output
+
+
 
 
