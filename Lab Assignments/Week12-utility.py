@@ -22,5 +22,14 @@ def update_string(string_1, string_2, num):
     return output
 
 
+def find_word_count(input_list, string):
+    count = 0
+    for index in input_list:
+        for word in index.split():
+            if string == word:
+                    count += 1
+    return count
+    
+
 
 
