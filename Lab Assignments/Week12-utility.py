@@ -80,5 +80,15 @@ def not_in(list_1, list_2):
     return new_list
 
 
-
+def is_prime(num):
+    if num == 1:
+        return False
+    elif num <= 3:
+        return True
+    elif num % 2 == 0 or num % 3 == 0:
+        return False
+    for i in range(2, round(math.sqrt(num))+1):
+        if (num % i == 0):
+            return False
+    return True
 
