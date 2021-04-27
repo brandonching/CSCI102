@@ -31,5 +31,22 @@ def find_word_count(input_list, string):
     return count
     
 
+def score_finder(players, scores, name):
+    lower_players = []
+    for names in players:
+        lower_players.append(names.lower())
+
+    if name.lower() in lower_players:
+        index = 0
+        for names in players:
+            if name.lower() == names.lower():
+                break
+            else:
+                index += 1
+        print('OUTPUT', name, 'got a score of', scores[index])
+    else:
+        print('OUTPUT player not found')
+
+
 
 
