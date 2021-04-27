@@ -62,5 +62,14 @@ def union(list_1, list_2):
     return no_dupes
 
 
+def intersect(list_1, list_2):
+    new_list = []
+    for item in list_1:
+        for index in list_2:
+            if item == index:
+                new_list.append(item)
+    return new_list
+
+
 
 
