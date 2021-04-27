@@ -48,5 +48,19 @@ def score_finder(players, scores, name):
         print('OUTPUT player not found')
 
 
+def union(list_1, list_2):
+    new_list = []
+    for item in list_1:
+        new_list.append(item)
+    for item in list_2:
+        new_list.append(item)
+
+    no_dupes = []
+    for item in new_list:
+        if item not in no_dupes:
+            no_dupes.append(item)
+    return no_dupes
+
+
 
 
